@@ -12,4 +12,3 @@ function get($file)
 		require_once 'include/' . $file . '.inc.php';
 	}
 }
-?>
