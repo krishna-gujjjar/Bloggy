@@ -1,0 +1,577 @@
+/*
+ * @Author: GurjarsPro
+ * @Date: 2019-02-08 21:28:33
+ * @Last Modified by: krishna_gujjjar
+ * @Last Modified time: 2019-02-19 20:17:47
+ */
+
+/*! ----- Global Style Starts ----- !*/
+:root {
+	--primary: #5f77ff;
+	--secondary: ;
+	--info: #209eff;
+	--success: #48d0aa;
+	--successDark: #1cca96;
+	--warning: #ffc64c;
+	--danger: #ff0062;
+	--dangerLight: #ff006220;
+	--bg: #eff1ff;
+	--bgLight: #eff1ff80;
+	--white: #ffffff;
+	--dark: #3a4161;
+	--darkLight: #3a4161e0;
+	--mute: #8c8da5;
+	--muteLight: #8c8da5e6;
+	--mutedLight: #8c8da580;
+	--softDark: #393c4750;
+	--softLight: #ffffff30;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--dark);
+	outline: none !important;
+	font-family: Roboto;
+	text-decoration: none !important;
+}
+
+*:focus,
+*:active {
+	box-shadow: none !important;
+}
+
+::selection {
+	background: var(--primary);
+	color: var(--white);
+}
+
+::placeholder {
+	color: var(--muteLight) !important;
+}
+
+/** ----- Global Style Ends ----- **/
+
+
+/*! ----- Preloader Starts ----- !*/
+.pace .pace-progress,
+#nprogress .bar {
+	height: 3px;
+	border-radius: 15px;
+	background: linear-gradient(90deg, transparent, var(--danger));
+}
+
+#nprogress .spinner-icon {
+	border-top-color: var(--danger);
+	border-left-color: var(--danger);
+	border-width: 3px;
+}
+
+/** ----- Preloader Ends ----- **/
+
+
+/*! ----- NavBar Starts ----- !*/
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-nav .active>.nav-link>*,
+.navbar-light .navbar-nav .nav-link.active>*,
+.navbar-light .navbar-nav .nav-link.show>*,
+.navbar-light .navbar-nav .show>.nav-link>*,
+.navbar-light .navbar-nav .nav-link:focus>*,
+.navbar-light .navbar-nav .nav-link:hover>* {
+	color: var(--dark);
+}
+
+.navbar-light .navbar-nav .nav-link>* {
+	color: var(--mute);
+}
+
+.navbar-light .navbar-brand {
+	color: var(--darkLight);
+}
+
+/** ----- NavBar Ends ----- **/
+
+
+/*! ----- Form Starts ----- !*/
+input:focus,
+textarea:focus,
+.form-control:focus {
+	border-color: initial;
+	outline: 0;
+	box-shadow: none;
+}
+
+.form-control {
+	border-color: var(--bg) !important;
+	color: var(--dark) !important;
+	padding: 1.4rem 1rem;
+}
+
+/** ----- Form Ends ----- **/
+
+/*! ----- Card Starts ----- !*/
+[class^="card"] {
+	border-color: var(--bg);
+}
+
+.card-title {
+	margin-bottom: 0;
+}
+
+/** ----- Card Ends ----- **/
+
+
+/*! ----- Shadow Starts ----- !*/
+.shadow-b {
+	box-shadow: 0 .125rem .25rem var(--bg) !important;
+}
+
+.shadow-sm {
+	box-shadow: 0 0.3rem 1.5rem var(--bg) !important;
+}
+
+.shadow {
+	box-shadow: 0 .8rem 2rem var(--bg) !important;
+}
+
+/** ----- Shadow Ends ----- **/
+
+
+/*! ----- Font & Text Starts ----- !*/
+.bold {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.fa-xl {
+	font-size: 1.7em;
+}
+
+.text-primary {
+	color: var(--primary) !important;
+}
+
+.text-info {
+	color: var(--info) !important;
+}
+
+.text-secondary {
+	color: var(--bg) !important;
+}
+
+.text-success {
+	color: var(--success) !important;
+}
+
+.text-warning {
+	color: var(--warning) !important;
+}
+
+.text-danger {
+	color: var(--danger) !important;
+}
+
+.text-dark {
+	color: var(--dark) !important
+}
+
+.text-muted {
+	color: var(--mute) !important
+}
+
+.text-mutedLight {
+	color: var(--mutedLight) !important
+}
+
+/** ----- Font & Text Ends ----- **/
+
+
+/*! ----- Borders Starts ----- !*/
+
+.border-primary {
+	border-color: var(--primary) !important;
+}
+
+.border-secondary {
+	border-color: var(--bg) !important;
+}
+
+.border-info {
+	border-color: var(--info) !important;
+}
+
+.border-success {
+	border-color: var(--success) !important;
+}
+
+.border-warning {
+	border-color: var(--warning) !important;
+}
+
+.border-danger {
+	border-color: var(--danger) !important;
+}
+
+/** ----- Borders Ends ----- **/
+
+
+/*! ----- Background Starts ----- !*/
+.bg-primary,
+.badge-primary {
+	background-color: var(--primary) !important;
+}
+
+.bg-danger,
+.badge-danger {
+	background-color: var(--danger) !important;
+}
+
+.bg-dangerLight,
+.badge-dangerLight {
+	background-color: var(--dangerLight) !important;
+}
+
+.bg-secondary {
+	background-color: var(--bg) !important;
+}
+
+.bg-success,
+.badge-success {
+	background-color: var(--success) !important;
+}
+
+.bg-warning,
+.badge-warning {
+	background-color: var(--warning) !important;
+}
+
+.bg-info,
+.badge-info {
+	background-color: var(--info) !important;
+}
+
+.bg-dark,
+.badge-dark {
+	background-color: var(--dark) !important;
+}
+
+.bg-muted,
+.badge-muted {
+	background-color: var(--mute) !important
+}
+
+.bg-img {
+	background: linear-gradient(#00000050, #00000050), url(../img/bg.jpg) center;
+	background-size: cover;
+}
+
+/** ----- Background Ends ----- **/
+
+
+/*! ---- btn Starts ---- !*/
+.btn {
+	position: relative;
+	overflow: hidden;
+	transition: all .5s ease-in-out;
+}
+
+.btn::before {
+	content: '';
+	background: var(--softLight);
+	position: absolute;
+	width: 2rem;
+	height: 200%;
+	left: -50%;
+	top: -50%;
+	transform: rotate(30deg);
+	transition: all .28s ease-in-out;
+}
+
+.btn:hover.btn::before {
+	left: 120%;
+}
+
+[class^="btn"],
+[class^="btn"]:focus,
+[class^="btn"]:active,
+[class^="btn"]:not(:disabled):not(.disabled).active,
+[class^="btn"]:not(:disabled):not(.disabled):active,
+.show>[class^="btn"].dropdown-toggle:focus {
+	box-shadow: none !important;
+}
+
+[class^="btn"]:not([class*="outline"]),
+[class^="btn"]:not([class*="outline"]):focus,
+[class^="btn"]:not([class*="outline"]):active,
+[class^="btn"]:not([class*="outline"]):not(:disabled):not(.disabled).active,
+[class^="btn"]:not([class*="outline"]):not(:disabled):not(.disabled):active,
+.show>[class^="btn"]:not([class*="outline"]).dropdown-toggle:focus {
+	border: none !important;
+}
+
+.btn-primary {
+	background-color: var(--primary) !important;
+}
+
+.btn-success {
+	background-color: var(--success);
+}
+
+.btn-warning {
+	background: var(--warning);
+}
+
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.show>.btn-success.dropdown-toggle,
+.btn-success:hover {
+	background: var(--successDark);
+}
+
+.btn-outline-primary {
+	color: var(--primary);
+	border-color: var(--primary);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle,
+.btn-outline-primary:hover {
+	background-color: var(--primary);
+	border-color: var(--primary);
+}
+
+.btn-outline-success {
+	color: var(--successDark);
+	border-color: var(--successDark);
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.show>.btn-outline-success.dropdown-toggle,
+.btn-outline-success:hover {
+	background-color: var(--successDark);
+	border-color: var(--successDark);
+}
+
+.btn-outline-danger {
+	color: var(--danger);
+	border-color: var(--danger);
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled).active,
+.btn-outline-danger:not(:disabled):not(.disabled):active,
+.show>.btn-outline-danger.dropdown-toggle,
+.btn-outline-danger:hover {
+	background-color: var(--danger);
+	border-color: var(--danger);
+}
+
+.btn-outline-warning {
+	color: var(--warning);
+	border-color: var(--warning);
+}
+
+.btn-outline-warning:not(:disabled):not(.disabled).active,
+.btn-outline-warning:not(:disabled):not(.disabled):active,
+.show>.btn-outline-warning.dropdown-toggle,
+.btn-outline-warning:hover {
+	background-color: var(--warning);
+	border-color: var(--warning);
+}
+
+/** ----- btn Ends ----- **/
+
+
+/*! ----- BootStrap Fix Starts ----- !*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	text-transform: capitalize;
+}
+
+pre {
+	margin: 0;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	color: var(--softDark);
+}
+
+a:hover {
+	color: var(--dark);
+}
+
+table,
+.table,
+.table-bordered,
+.table-bordered th,
+.table-bordered td {
+	border-color: var(--bg) !important;
+}
+
+/** ----- BootStrap Fix Ends ----- **/
+
+
+/*! ----- My Classes Starts ----- !*/
+.cursor {
+	cursor: pointer !important;
+}
+
+.border-1 {
+	border-width: .25rem !important;
+}
+
+.font-sm {
+	font-size: .85rem;
+}
+
+.font-reset {
+	font-size: 100% !important;
+}
+
+.inputSend {
+	color: var(--mute);
+	right: 0;
+	z-index: 100;
+}
+
+.inputSend:hover {
+	color: var(--primary);
+}
+
+.line-off {
+	line-height: 1.4 !important
+}
+
+.w-5 {
+	width: 5%;
+}
+
+.w-10 {
+	width: 10%;
+}
+
+.w-15 {
+	width: 15%;
+}
+
+.nm-fill {
+	margin-left: -1.25rem !important;
+	margin-right: -1.25rem !important;
+}
+
+.no-style {
+	all: unset;
+}
+
+.bg-cover {
+	/* background-attachment: fixed !important; */
+	background-size: cover !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+}
+
+/** ----- My Classes Ends ----- **/
+/* What are the default Bootstrap 4 text sizes?
+Display 1 (6rem = 90px)
+Display 2 (5.5rem = 82.5px)
+Display 3 (4.5rem = 67.5px)
+Display 4 (3.5rem = 52.5px)
+h1 (2.5rem = 40px)
+h2 (2rem = 32px)
+h3 (1.75rem = 28px)
+h4 (1.5rem = 24px)
+h5 (1.25rem = 20px)
+h6 (1rem = 16px)
+p (1rem = 16px) */
+
+/* 
+Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* h1 {
+	font-size: 1rem;
+} */
+
+/*1rem = 16px*/
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+--breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+*/
+/* Small devices (landscape phones, 544px and up) */
+/* @media (min-width: 554px) {
+ */
+
+
+/*1rem = 16px*/
+/* } */
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* @media (min-width: 768px) {
+	h1 {
+		font-size: 2rem;
+	} */
+
+
+
+/*1rem = 16px*/
+/* } */
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width:992px) {
+	h1 {
+		font-size: 2.5rem;
+	} */
+
+
+
+/*1rem = 16px*/
+/* } */
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+	h1 {
+		font-size: 3rem;
+	} */
+
+/*1rem = 16px*/
+/* } */
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+/* @media (min-width: 950px) and (max-width:1100px) {
+	h1 {
+		font-size: 2.75rem;
+		color: red;
+	}
+} */

@@ -1,0 +1,35 @@
+# @Author: Krishna_Gujjjar 
+# @Date: 2018-07-20 20:07:28 
+# @Last Modified by: krishna_gujjjar 
+# @Last Modified time: 2018-07-20 20:07:28 
+
+# #Block Visitor From Other Links
+# Options +FollowSymLinks
+
+# #remove file extension
+# RewriteEngine on 
+# RewriteCond %{SCRIPT_FILENAME} !-d
+# RewriteCond %{SCRIPT_FILENAME} !-f
+# # RewriteRule ^([^.]+)$ .php [NC,L]
+
+# # #Deny Access of Hide Files
+# RewriteCond %{SCRIPT_FILENAME} -d [OR]
+# RewriteCond %{SCRIPT_FILENAME} -f
+# RewriteRule "(^|/)\." - [F]
+
+# #Deny Access Of Dev Files
+# <FilesMatch "(\.(bak|config|editorconfig|dist|ini|sh|sql|inc.php|function.php)|~)$">
+# 	Require all denied
+# </FilesMatch>
+
+
+# #Clean Url
+# RewriteRule ^([0-9a-zA-Z-]+)$ $1.php?user=$1 [QSA,L]
+
+# #RewriteRule ^([0-9a-zA-Z-]+)/([0-9a-zA-Z-]+)$ searchs.php?category=$1&subcategory=$2 [NC,L]
+# #RewriteRule ^([0-9a-zA-Z-]+)/([0-9a-zA-Z-]+)/([0-9a-zA-Z-]+)$ details.php?category=$1&subcategory=$2&products=$3 [NC,L]
+
+#Custom Error Page
+ErrorDocument 404 /error/404.html
+ErrorDocument 500 "Errror 500 You Cant Access"
+ErrorDocument 401 "Error 401"
