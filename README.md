@@ -1,1 +1,1 @@
-# Bloggy
+# Blogy
